@@ -1,0 +1,19 @@
+.about-main-sec {
+  background: unset;
+  background-color: $light-transparent-grey;
+}
+
+.about-main-text {
+  border-color: $dark-grey;
+}
+
+.about-main-information {
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-main-information > div > div {
+    text-align: center;
+  }
+}

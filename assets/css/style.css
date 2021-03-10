@@ -164,6 +164,20 @@ main {
 
   .featured-participants section > div:first-child {
     height: auto; } }
+.about-main-sec {
+  background: unset;
+  background-color: rgba(248, 248, 248, 0.7); }
+
+.about-main-text {
+  border-color: #545454; }
+
+.about-main-information {
+  border-top: 1px solid #b8b8b8;
+  border-bottom: 1px solid #b8b8b8; }
+
+@media screen and (min-width: 1200px) {
+  .about-main-information > div > div {
+    text-align: center; } }
 body {
   font-family: lato, sans-serif;
   overflow-x: hidden; }
