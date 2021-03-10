@@ -1,17 +1,219 @@
+.bg-color-orange {
+  background-color: #fe4809; }
+
+.bg-color-light-grey {
+  background-color: #b8b8b8; }
+
+.bg-color-light-transparent-grey {
+  background-color: rgba(248, 248, 248, 0.7); }
+
+.bg-color-dark-grey {
+  background-color: #545454; }
+
+.bg-color-white {
+  background-color: white; }
+
+.bg-color-transparent-white {
+  background-color: rgba(255, 255, 255, 0.15); }
+
+.bg-color-black {
+  background-color: black; }
+
+.color-orange {
+  color: #fe4809; }
+
+.color-light-grey {
+  color: #b8b8b8; }
+
+.color-light-transparent-grey {
+  color: rgba(248, 248, 248, 0.7); }
+
+.color-dark-grey {
+  color: #545454; }
+
+.color-white {
+  color: white; }
+
+.color-transparent-white {
+  color: rgba(255, 255, 255, 0.15); }
+
+.color-black {
+  color: black; }
+
 @font-face {
   font-family: "cocogoose-light";
-  src: url("../../fonts/cocogoose-light.woff2") format("woff"), url("../../fonts/cocogoose-light.woff") format("woff2");
+  src: url("../../assets/fonts/cocogoose-light.woff2") format("woff"), url("../../assets/fonts/cocogoose-light.woff") format("woff2");
   font-weight: 300;
   font-style: normal; }
 @font-face {
   font-family: "cocogoose-regular";
-  src: url("../../fonts/cocogoose-regular.woff") format("woff"), url("../../fonts/cocogoose-regular.ttf") format("truetype");
+  src: url("../../assets/fonts/cocogoose-regular.woff") format("woff"), url("../../assets/fonts/cocogoose-regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "Lato";
-  src: url("../../fonts/lato-regular.woff") format("woff"), url("../../fonts/lato-regular.ttf") format("truetype");
+  font-family: "lato";
+  src: url("../../assets/fonts/lato-regular.woff") format("woff"), url("../../assets/fonts/lato-regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+main {
+  min-height: 550px;
+  background: url(../../assets/images/main-section-background.jpg) no-repeat center;
+  background-size: cover;
+  position: relative; }
+  main > span {
+    position: absolute; }
+    main > span > svg {
+      width: 2.5em;
+      height: 2.5em;
+      transition: width 1s, height 1s; }
+    main > span:hover > svg {
+      width: 2.8em;
+      height: 2.8em;
+      cursor: pointer; }
+  main span:nth-child(2) {
+    bottom: 2em;
+    left: 1em; }
+  main span:nth-child(3) {
+    top: 55%;
+    text-align: right;
+    right: 4em; }
+  main span:nth-child(4) {
+    top: 25%;
+    text-align: right;
+    right: 28%; }
+  main span:nth-child(5) {
+    bottom: 20%;
+    text-align: right;
+    right: 22%; }
+
+.main-information {
+  background: url(../../assets/images/main-information-background.jpg) no-repeat center;
+  background-size: cover; }
+  .main-information section > div {
+    display: grid;
+    grid-template-columns: 1fr 5fr; }
+    .main-information section > div p {
+      text-align: left; }
+
+.where-icon,
+.When-icon,
+.how-long-icon {
+  width: 3em;
+  height: 3em; }
+
+.where-icon {
+  background: url(../../assets/images/main-info-icons/where.svg) no-repeat center;
+  background-size: contain; }
+
+.When-icon {
+  background: url(../../assets/images/main-info-icons/when.png) no-repeat center;
+  background-size: contain; }
+
+.how-long-icon {
+  background: url(../../assets/images/main-info-icons/how-long.svg) no-repeat center;
+  background-size: contain; }
+
+.featured-participants section {
+  grid-template-columns: 1fr 2fr; }
+  .featured-participants section > div:first-child {
+    background: url(../../assets/images/bg-featured-participants-sections.png) no-repeat left top;
+    background-size: 4em;
+    height: 6em; }
+
+.sponsor-sec {
+  background-color: #545454; }
+  .sponsor-sec > div span {
+    height: 4em;
+    display: inline-block; }
+  .sponsor-sec > div span:first-child {
+    background: url(../../assets/images/partners/addidas-logo.png) no-repeat center;
+    background-size: contain; }
+  .sponsor-sec > div span:nth-child(2) {
+    background: url(../../assets/images/partners/olympics-logo.png) no-repeat center;
+    background-size: contain; }
+  .sponsor-sec > div span:nth-child(3) {
+    background: url(../../assets/images/partners/puma-logo.png) no-repeat center;
+    background-size: contain; }
+  .sponsor-sec > div span:nth-child(4) {
+    background: url(../../assets/images/partners/engrgizer-logo.png) no-repeat center;
+    background-size: contain; }
+  .sponsor-sec > div span:last-child {
+    background: url(../../assets/images/partners/reebok-logo.png) no-repeat center;
+    background-size: contain; }
+
+@media screen and (min-width: 768px) {
+  main {
+    min-height: 650px; }
+
+  .main-information section > div {
+    display: block; }
+    .main-information section > div p {
+      text-align: center; }
+
+  .sub-main-info {
+    min-height: 26em; }
+
+  .see-more-info {
+    background-color: unset !important;
+    text-decoration: underline !important; }
+    .see-more-info:hover {
+      color: #fe4809; } }
+@media screen and (min-width: 1200px) {
+  .sub-main-info {
+    min-height: 18em; }
+
+  .featured-participants section > div:first-child {
+    height: auto; } }
+body {
+  font-family: lato, sans-serif;
+  overflow-x: hidden; }
+
+h1,
+h2,
+h4 {
+  font-family: cocogoose-regular, sans-serif; }
+
+header {
+  height: -webkit-fill-available; }
+  header a.join-btn {
+    border: 1px solid #fe4809; }
+  header nav a:hover {
+    color: #fe4809; }
+  header > div:last-child {
+    z-index: 1; }
+
+footer h2 {
+  font-size: 1em; }
+footer nav a:hover {
+  color: #fe4809; }
+
+.burger-menu svg {
+  width: 35px;
+  height: 35px; }
+
+h2.letter-header {
+  font-family: sans-serif;
+  font-weight: 900; }
+
+.orange-separator::after {
+  content: "";
+  width: 2.5em;
+  height: 0.1em;
+  background-color: #fe4809;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.5em; }
+
+.primary-button {
+  background-color: #fe4809;
+  color: white; }
+
+.grey-separator::after {
+  content: "";
+  width: 2em;
+  height: 0.1em;
+  background-color: #b8b8b8;
+  display: block;
+  margin: 0.5em 0; }
 
 /*# sourceMappingURL=style.css.map */

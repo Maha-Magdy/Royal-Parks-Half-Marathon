@@ -2,3 +2,77 @@
 @import "helpers/loops";
 @import "helpers/fonts";
 @import "components/home-page";
+
+// shared style
+body {
+  font-family: lato, sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h4 {
+  font-family: cocogoose-regular, sans-serif;
+}
+
+header {
+  height: -webkit-fill-available;
+  a.join-btn {
+    border: 1px solid $orange;
+  }
+
+  nav a:hover {
+    color: $orange;
+  }
+  > div:last-child {
+    z-index: 1;
+  }
+}
+
+footer {
+  h2 {
+    font-size: 1em;
+  }
+  nav a:hover {
+    color: $orange;
+  }
+}
+
+// common classes
+.burger-menu svg {
+  width: 35px;
+  height: 35px;
+}
+
+h2.letter-header {
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.orange-separator {
+  &::after {
+    content: "";
+    width: 2.5em;
+    height: 0.1em;
+    background-color: $orange;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.5em;
+  }
+}
+
+.primary-button {
+  background-color: $orange;
+  color: white;
+}
+
+.grey-separator {
+  &::after {
+    content: "";
+    width: 2em;
+    height: 0.1em;
+    background-color: $light-grey;
+    display: block;
+    margin: 0.5em 0;
+  }
+}
