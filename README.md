@@ -27,7 +27,8 @@ The project makes use of HTML5, Bootstrap, and Sass.
 
 -Download all the files to the same folder and run index.html
 
--To clone this repo run this code on a terminal window:
+-To clone this repo run this code on a terminal window: 
+
 git clone https://github.com/Maha-Magdy/Royal-Parks-Half-Marathon.git
 
 ### Install
