@@ -180,9 +180,43 @@ main {
   border-top: 1px solid #b8b8b8;
   border-bottom: 1px solid #b8b8b8; }
 
+.see-further-marathons > div > div:first-child::before,
+.see-further-marathons > div > div:last-child::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(254, 72, 9, 0.5);
+  top: 0;
+  left: 0; }
+
+.see-further-marathons > div > div:first-child:hover::before,
+.see-further-marathons > div > div:last-child:hover::before {
+  content: unset; }
+
+.see-further-marathons > div > div:first-child {
+  background: url(../../assets/images/comrades-marthon.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 15em; }
+
+.see-further-marathons > div > div:last-child {
+  background: url(../../assets/images/great-north-run.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 15em; }
+
+.z-index-1 {
+  z-index: 1; }
+
 @media screen and (min-width: 1200px) {
   .about-main-information > div > div {
     text-align: center; } }
+.ticket-main-sec {
+  min-height: auto; }
+
+.ticket-wrapper {
+  background: url(../../assets/images/ticket-background.jpg) no-repeat center;
+  background-size: cover; }
+
 body {
   font-family: lato, sans-serif;
   overflow-x: hidden; }
