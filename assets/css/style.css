@@ -174,7 +174,7 @@ main {
       color: #fe4809; }
 
   .hide-to-see-less {
-    display: block !important; } }
+    display: grid !important; } }
 @media screen and (min-width: 1200px) {
   .sub-main-info {
     min-height: 18em; }
