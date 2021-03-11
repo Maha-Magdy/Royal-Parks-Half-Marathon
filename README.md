@@ -3,7 +3,7 @@
 This website is to announce the coming Royal Parks Half Marathon and contains four main pages home, about, route, and tickets pages.
 The project makes use of HTML5, Bootstrap, and Sass.
 
-![screenshot](./assets/images/royal-parks-website.png)
+![screenshot](./royal-parks-website.png)
 
 ## Built With
 
@@ -65,10 +65,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- The orginal article that I took most of the information about the marathon ( https://www.runnersworld.com/uk/events/a25988769/royal-parks-half-marathon/# )
-- Bootstrap ( https://getbootstrap.com/ )
-- Flaticon ( https://www.flaticon.com/ )
-- A credit of the design that has been followed on Behance ( https://www.behance.net/gallery/29845175/CC-Global-Summit-2015 )
+- [The orginal article that I took most of the information about the marathon](https://www.runnersworld.com/uk/events/a25988769/royal-parks-half-marathon/#)
+- [Bootstrap](https://getbootstrap.com/)
+- [Flaticon](https://www.flaticon.com/)
+- [A credit of the design that has been followed on Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 ## 📝 License
 
