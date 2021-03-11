@@ -1,0 +1,65 @@
+.about-main-sec {
+  background: unset;
+  background-color: $light-transparent-grey;
+}
+
+.about-main-text {
+  border-color: $dark-grey;
+}
+
+.about-main-information {
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+}
+
+.see-further-marathons > div > div:first-child::before,
+.see-further-marathons > div > div:last-child::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.25);
+  top: 0;
+  left: 0;
+}
+
+.see-further-marathons > div > div:first-child {
+  background: url(../../assets/images/comrades-marthon.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 15em;
+}
+
+.see-further-marathons > div > div:last-child {
+  background: url(../../assets/images/great-north-run.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 15em;
+
+  &:hover {
+    &::before {
+      content: unset;
+    }
+  }
+}
+
+.see-further-marathons > div > div:first-child:hover {
+  &::before {
+    content: unset;
+  }
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .see-further-marathons > div > div:first-child::before,
+  .see-further-marathons > div > div:last-child::before {
+    background-color: rgba(254, 72, 9, 0.5);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-main-information > div > div {
+    text-align: center;
+  }
+}

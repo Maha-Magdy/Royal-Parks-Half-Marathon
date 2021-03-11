@@ -1,0 +1,25 @@
+@import "variables";
+
+$colors: (
+  "orange": $orange,
+  "light-grey": $light-grey,
+  "light-transparent-grey": $light-transparent-grey,
+  "dark-grey": $dark-grey,
+  "white": $white,
+  "transparent-white": $transparent-white,
+  "black": $black,
+);
+
+// background color loop
+@each $color-name, $color in $colors {
+  .bg-color-#{$color-name} {
+    background-color: $color;
+  }
+}
+
+// color loop
+@each $color-name, $color in $colors {
+  .color-#{$color-name} {
+    color: $color;
+  }
+}

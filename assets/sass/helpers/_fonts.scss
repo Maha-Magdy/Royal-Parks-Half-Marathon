@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "cocogoose-light";
+  src:
+    url("../../assets/fonts/cocogoose-light.woff2") format("woff"),
+    url("../../assets/fonts/cocogoose-light.woff") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cocogoose-regular";
+  src:
+    url("../../assets/fonts/cocogoose-regular.woff") format("woff"),
+    url("../../assets/fonts/cocogoose-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato";
+  src:
+    url("../../assets/fonts/lato-regular.woff") format("woff"),
+    url("../../assets/fonts/lato-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

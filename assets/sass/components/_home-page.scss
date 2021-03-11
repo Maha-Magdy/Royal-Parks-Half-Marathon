@@ -1,0 +1,213 @@
+main {
+  min-height: 550px;
+  background:
+    url(../../assets/images/main-section-background.jpg) no-repeat
+    center;
+  background-size: cover;
+  position: relative;
+
+  > span {
+    position: absolute;
+
+    > svg {
+      width: 2.5em;
+      height: 2.5em;
+      transition: width 1s, height 1s;
+    }
+
+    &:hover {
+      > svg {
+        width: 2.8em;
+        height: 2.8em;
+        cursor: pointer;
+      }
+    }
+  }
+
+  span:first-child {
+    bottom: 2em;
+    left: 1em;
+  }
+
+  span:nth-child(2) {
+    top: 45%;
+    text-align: right;
+    right: 10%;
+  }
+
+  span:nth-child(3) {
+    top: 25%;
+    text-align: right;
+    right: 28%;
+  }
+
+  span:nth-child(4) {
+    bottom: 20%;
+    text-align: right;
+    right: 22%;
+  }
+
+  span:nth-child(5) {
+    bottom: 35%;
+    text-align: right;
+    right: 40%;
+  }
+}
+
+.sponsor-sec {
+  background-color: $dark-grey;
+
+  > div {
+    span {
+      height: 4em;
+      display: inline-block;
+    }
+
+    span:first-child {
+      background:
+        url(../../assets/images/partners/addidas-logo.png) no-repeat
+        center;
+      background-size: contain;
+    }
+
+    span:nth-child(2) {
+      background:
+        url(../../assets/images/partners/olympics-logo.png) no-repeat
+        center;
+      background-size: contain;
+    }
+
+    span:nth-child(3) {
+      background:
+        url(../../assets/images/partners/puma-logo.png) no-repeat
+        center;
+      background-size: contain;
+    }
+
+    span:nth-child(4) {
+      background:
+        url(../../assets/images/partners/engrgizer-logo.png) no-repeat
+        center;
+      background-size: contain;
+    }
+
+    span:last-child {
+      background:
+        url(../../assets/images/partners/reebok-logo.png) no-repeat
+        center;
+      background-size: contain;
+    }
+  }
+}
+
+.main-information {
+  background:
+    url(../../assets/images/main-information-background.jpg) no-repeat
+    center;
+  background-size: cover;
+
+  section > div {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+    p {
+      text-align: left;
+    }
+  }
+}
+
+.where-icon,
+.When-icon,
+.how-long-icon {
+  width: 3em;
+  height: 3em;
+}
+
+.where-icon {
+  background:
+    url(../../assets/images/main-info-icons/where.svg) no-repeat
+    center;
+  background-size: contain;
+}
+
+.When-icon {
+  background: url(../../assets/images/main-info-icons/when.png) no-repeat center;
+  background-size: contain;
+}
+
+.how-long-icon {
+  background:
+    url(../../assets/images/main-info-icons/how-long.svg) no-repeat
+    center;
+  background-size: contain;
+}
+
+.featured-participants section {
+  grid-template-columns: 1fr 2fr;
+  min-height: 10em;
+
+  > div:first-child {
+    background:
+      url(../../assets/images/bg-featured-participants-sections.png)
+      no-repeat left top;
+    background-size: 4em;
+    height: 6em;
+  }
+}
+
+#see-less {
+  display: none;
+}
+
+.hide-to-see-less {
+  display: none !important;
+}
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+  .featured-participants section {
+    min-height: 14em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    min-height: calc(100vh - 7em);
+  }
+
+  .main-information {
+    section > div {
+      display: block;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .sub-main-info {
+    min-height: 26em;
+  }
+
+  .see-more-info {
+    background-color: unset !important;
+    text-decoration: underline !important;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  .hide-to-see-less {
+    display: grid !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sub-main-info {
+    min-height: 18em;
+  }
+
+  .featured-participants section > div:first-child {
+    height: auto;
+  }
+}
