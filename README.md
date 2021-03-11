@@ -14,6 +14,9 @@ The project makes use of HTML5, Bootstrap, and Sass.
 
 [Live Demo Link]( https://maha-magdy.github.io/Royal-Parks-Half-Marathon/ )
 
+## Loom Video
+[Loom Video Link](https://www.loom.com/share/bc56eddb747242a7961e1519d01c862a)
+
 ## Getting Started
 
 **To get a local copy up and running follow these simple steps.**
@@ -27,7 +30,8 @@ The project makes use of HTML5, Bootstrap, and Sass.
 
 -Download all the files to the same folder and run index.html
 
--To clone this repo run this code on a terminal window:
+-To clone this repo run this code on a terminal window: 
+
 git clone https://github.com/Maha-Magdy/Royal-Parks-Half-Marathon.git
 
 ### Install
