@@ -219,12 +219,14 @@ h2,
 h4 {
   font-family: cocogoose-regular, sans-serif; }
 
-header a.join-btn {
-  border: 1px solid #fe4809; }
-header nav a:hover {
-  color: #fe4809; }
-header > div:last-child {
-  z-index: 1; }
+header {
+  max-height: 0; }
+  header a.join-btn {
+    border: 1px solid #fe4809; }
+  header nav a:hover {
+    color: #fe4809; }
+  header > div:last-child {
+    z-index: 1; }
 
 footer h2 {
   font-size: 1em; }
@@ -259,5 +261,9 @@ h2.letter-header {
   background-color: #b8b8b8;
   display: block;
   margin: 0.5em 0; }
+
+@media screen and (min-width: 768px) {
+  header {
+    max-height: 6em; } }
 
 /*# sourceMappingURL=style.css.map */

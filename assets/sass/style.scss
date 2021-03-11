@@ -18,6 +18,7 @@ h4 {
 }
 
 header {
+  max-height: 0;
   a.join-btn {
     border: 1px solid $orange;
   }
@@ -77,5 +78,11 @@ h2.letter-header {
     background-color: $light-grey;
     display: block;
     margin: 0.5em 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    max-height: 6em;
   }
 }
