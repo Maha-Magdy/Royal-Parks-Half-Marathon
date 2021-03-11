@@ -74,9 +74,9 @@ main {
     bottom: 2em;
     left: 1em; }
   main span:nth-child(3) {
-    top: 55%;
+    top: 45%;
     text-align: right;
-    right: 4em; }
+    right: 10%; }
   main span:nth-child(4) {
     top: 25%;
     text-align: right;
@@ -85,6 +85,10 @@ main {
     bottom: 20%;
     text-align: right;
     right: 22%; }
+  main span:nth-child(6) {
+    bottom: 35%;
+    text-align: right;
+    right: 40%; }
 
 .main-information {
   background: url(../../assets/images/main-information-background.jpg) no-repeat center;
@@ -114,7 +118,8 @@ main {
   background-size: contain; }
 
 .featured-participants section {
-  grid-template-columns: 1fr 2fr; }
+  grid-template-columns: 1fr 2fr;
+  min-height: 10em; }
   .featured-participants section > div:first-child {
     background: url(../../assets/images/bg-featured-participants-sections.png) no-repeat left top;
     background-size: 4em;
