@@ -15,38 +15,38 @@
 
 <body>
     <div class="container-fluid">
+        <header class="shadow-sm bg-body">
+            <div class="row d-none d-md-block bg-color-dark-grey py-1">
+                <ul class="color-white list-unstyled d-flex justify-content-end m-0 px-lg-5">
+                    <li><a href="#" class="facebook px-2"><i class="bi bi-facebook color-white"></i></a></li>
+                    <li><a href="#" class="twitter px-2"><i class="bi bi-twitter color-white"></i></a></li>
+                    <li><a class="color-white text-decoration-none px-2" href="#">English</a></li>
+                    <li><a class="color-white text-decoration-none px-2" href="#">Logout</a></li>
+                </ul>
+            </div>
+            <div class="row d-none d-md-block bg-color-white py-3">
+                <div class="px-lg-5 row align-items-center">
+                    <a href="#" class="logo text-decoration-none col-4 d-inline-block">
+                        <h2 class="color-black mb-0 text-decoration-none fs-6">Royal Parks</h2>
+                        <h2 class="color-black mb-0 text-decoration-none fs-6">Half Marathon</h2>
+                    </a>
+                    <nav class="col-6 d-inline-block">
+                        <ul class="list-unstyled d-flex m-0 fw-bold justify-content-around">
+                            <li><a class="color-dark-grey text-decoration-none" href="index.html">Home</a></li>
+                            <li><a class="color-dark-grey text-decoration-none" href="about.html">About</a></li>
+                            <li><a class="color-dark-grey text-decoration-none" href="#">Route</a></li>
+                            <li><a class="color-dark-grey text-decoration-none" href="tickets.html">Tickets</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#"
+                        class="col-2 d-inline-block text-decoration-none color-orange text-center py-2 join-btn">Join</a>
+                </div>
+            </div>
+        </header>
+        
         <main class="row about-main-sec">
-            <header class="shadow-sm bg-body">
-                <div class="row d-none d-md-block bg-color-dark-grey py-1">
-                    <ul class="color-white list-unstyled d-flex justify-content-end m-0 px-lg-5">
-                        <li><a href="#" class="facebook px-2"><i class="bi bi-facebook color-white"></i></a></li>
-                        <li><a href="#" class="twitter px-2"><i class="bi bi-twitter color-white"></i></a></li>
-                        <li><a class="color-white text-decoration-none px-2" href="#">English</a></li>
-                        <li><a class="color-white text-decoration-none px-2" href="#">Logout</a></li>
-                    </ul>
-                </div>
-                <div class="row d-none d-md-block bg-color-white py-3">
-                    <div class="px-lg-5 row align-items-center">
-                        <a href="#" class="logo text-decoration-none col-4 d-inline-block">
-                            <h2 class="color-black mb-0 text-decoration-none fs-6">Royal Parks</h2>
-                            <h2 class="color-black mb-0 text-decoration-none fs-6">Half Marathon</h2>
-                        </a>
-                        <nav class="col-6 d-inline-block">
-                            <ul class="list-unstyled d-flex m-0 fw-bold justify-content-around">
-                                <li><a class="color-dark-grey text-decoration-none" href="index.html">Home</a></li>
-                                <li><a class="color-dark-grey text-decoration-none" href="about.html">About</a></li>
-                                <li><a class="color-dark-grey text-decoration-none" href="#">Route</a></li>
-                                <li><a class="color-dark-grey text-decoration-none" href="tickets.html">Tickets</a></li>
-                            </ul>
-                        </nav>
-                        <a href="#"
-                            class="col-2 d-inline-block text-decoration-none color-orange text-center py-2 join-btn">Join</a>
-                    </div>
-                </div>
-            </header>
-
             <!-- the main content -->
-            <a href="#" class="burger-menu p-4 col-12 d-md-none">
+            <a href="#" class="burger-menu p-4 col-12 d-md-none" id="toggle-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                     id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 92.833 92.833"
                     style="enable-background:new 0 0 92.833 92.833;" xml:space="preserve">
@@ -65,6 +65,14 @@
                     </g>
                 </svg>
             </a>
+            <div class="d-md-none px-4 py-2 mobile-menu">
+                <ul class="px-0 h-100">
+                    <li><a class="color-dark-grey text-decoration-none" href="#">Home</a></li>
+                    <li><a class="color-dark-grey text-decoration-none" href="about.html">About</a></li>
+                    <li><a class="color-dark-grey text-decoration-none" href="route.html">Route</a></li>
+                    <li><a class="color-dark-grey text-decoration-none" href="tickets.html">Tickets</a></li>
+                </ul>
+            </div>
             <div class="px-lg-5">
                 <div class="col-12 mt-md-5">
                     <h1 class="m-0 color-orange text-center orange-separator fs-4 mb-2">the route of the Royal Parks Half
@@ -114,6 +122,7 @@
         </footer>
     </div>
     <script src="assets/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 
 </html>

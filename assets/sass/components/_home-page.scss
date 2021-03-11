@@ -24,30 +24,30 @@ main {
     }
   }
 
-  span:nth-child(2) {
+  span:first-child {
     bottom: 2em;
     left: 1em;
   }
 
-  span:nth-child(3) {
+  span:nth-child(2) {
     top: 45%;
     text-align: right;
     right: 10%;
   }
 
-  span:nth-child(4) {
+  span:nth-child(3) {
     top: 25%;
     text-align: right;
     right: 28%;
   }
 
-  span:nth-child(5) {
+  span:nth-child(4) {
     bottom: 20%;
     text-align: right;
     right: 22%;
   }
 
-  span:nth-child(6) {
+  span:nth-child(5) {
     bottom: 35%;
     text-align: right;
     right: 40%;
@@ -155,9 +155,23 @@ main {
   }
 }
 
+#see-less {
+  display: none;
+}
+
+.hide-to-see-less {
+  display: none !important;
+}
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+  .featured-participants section {
+    min-height: 14em;
+  }
+}
+
 @media screen and (min-width: 768px) {
   main {
-    min-height: 650px;
+    min-height: calc(100vh - 7em);
   }
 
   .main-information {
@@ -181,6 +195,10 @@ main {
     &:hover {
       color: $orange;
     }
+  }
+
+  .hide-to-see-less {
+    display: block !important;
   }
 }
 

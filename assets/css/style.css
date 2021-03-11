@@ -70,22 +70,22 @@ main {
       width: 2.8em;
       height: 2.8em;
       cursor: pointer; }
-  main span:nth-child(2) {
+  main span:first-child {
     bottom: 2em;
     left: 1em; }
-  main span:nth-child(3) {
+  main span:nth-child(2) {
     top: 45%;
     text-align: right;
     right: 10%; }
-  main span:nth-child(4) {
+  main span:nth-child(3) {
     top: 25%;
     text-align: right;
     right: 28%; }
-  main span:nth-child(5) {
+  main span:nth-child(4) {
     bottom: 20%;
     text-align: right;
     right: 22%; }
-  main span:nth-child(6) {
+  main span:nth-child(5) {
     bottom: 35%;
     text-align: right;
     right: 40%; }
@@ -146,9 +146,18 @@ main {
     background-size: 4em;
     height: 6em; }
 
+#see-less {
+  display: none; }
+
+.hide-to-see-less {
+  display: none !important; }
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+  .featured-participants section {
+    min-height: 14em; } }
 @media screen and (min-width: 768px) {
   main {
-    min-height: 650px; }
+    min-height: calc(100vh - 7em); }
 
   .main-information section > div {
     display: block; }
@@ -162,7 +171,10 @@ main {
     background-color: unset !important;
     text-decoration: underline !important; }
     .see-more-info:hover {
-      color: #fe4809; } }
+      color: #fe4809; }
+
+  .hide-to-see-less {
+    display: block !important; } }
 @media screen and (min-width: 1200px) {
   .sub-main-info {
     min-height: 18em; }
@@ -186,7 +198,7 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(254, 72, 9, 0.5);
+  background-color: rgba(34, 34, 34, 0.25);
   top: 0;
   left: 0; }
 
@@ -194,12 +206,24 @@ main {
   background: url(../../assets/images/comrades-marthon.jpg) no-repeat center;
   background-size: cover;
   min-height: 15em; }
-  .see-further-marathons > div > div:first-child:hover::before {
+
+.see-further-marathons > div > div:last-child {
+  background: url(../../assets/images/great-north-run.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 15em; }
+  .see-further-marathons > div > div:last-child:hover::before {
     content: unset; }
+
+.see-further-marathons > div > div:first-child:hover::before {
+  content: unset; }
 
 .z-index-1 {
   z-index: 1; }
 
+@media screen and (min-width: 768px) {
+  .see-further-marathons > div > div:first-child::before,
+  .see-further-marathons > div > div:last-child::before {
+    background-color: rgba(254, 72, 9, 0.5); } }
 @media screen and (min-width: 1200px) {
   .about-main-information > div > div {
     text-align: center; } }
@@ -218,6 +242,24 @@ h1,
 h2,
 h4 {
   font-family: cocogoose-regular, sans-serif; }
+
+.mobile-menu-show {
+  display: block !important;
+  position: absolute;
+  top: 60px;
+  height: 26em; }
+  .mobile-menu-show > ul {
+    background: #fffffffa;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    font-family: cocogoose-regular, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .mobile-menu-show a {
+    padding: 0 5px 5px;
+    border-bottom: 1px solid #fe4809; }
 
 header {
   max-height: 0; }
@@ -262,8 +304,11 @@ h2.letter-header {
   display: block;
   margin: 0.5em 0; }
 
+.mobile-menu {
+  display: none; }
+
 @media screen and (min-width: 768px) {
   header {
-    max-height: 6em; } }
+    max-height: 7em; } }
 
 /*# sourceMappingURL=style.css.map */

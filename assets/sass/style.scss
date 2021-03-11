@@ -17,6 +17,30 @@ h4 {
   font-family: cocogoose-regular, sans-serif;
 }
 
+// common class
+.mobile-menu-show {
+  display: block !important;
+  position: absolute;
+  top: 60px;
+  height: 26em;
+
+  > ul {
+    background: #fffffffa;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    font-family: cocogoose-regular, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  a {
+    padding: 0 5px 5px;
+    border-bottom: 1px solid $orange;
+  }
+}
+
 header {
   max-height: 0;
 
@@ -82,8 +106,12 @@ h2.letter-header {
   }
 }
 
+.mobile-menu {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   header {
-    max-height: 6em;
+    max-height: 7em;
   }
 }
