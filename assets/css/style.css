@@ -90,6 +90,27 @@ main {
     text-align: right;
     right: 40%; }
 
+.sponsor-sec {
+  background-color: #545454; }
+  .sponsor-sec > div span {
+    height: 4em;
+    display: inline-block; }
+  .sponsor-sec > div span:first-child {
+    background: url(../../assets/images/partners/addidas-logo.png) no-repeat center;
+    background-size: contain; }
+  .sponsor-sec > div span:nth-child(2) {
+    background: url(../../assets/images/partners/olympics-logo.png) no-repeat center;
+    background-size: contain; }
+  .sponsor-sec > div span:nth-child(3) {
+    background: url(../../assets/images/partners/puma-logo.png) no-repeat center;
+    background-size: contain; }
+  .sponsor-sec > div span:nth-child(4) {
+    background: url(../../assets/images/partners/engrgizer-logo.png) no-repeat center;
+    background-size: contain; }
+  .sponsor-sec > div span:last-child {
+    background: url(../../assets/images/partners/reebok-logo.png) no-repeat center;
+    background-size: contain; }
+
 .main-information {
   background: url(../../assets/images/main-information-background.jpg) no-repeat center;
   background-size: cover; }
@@ -124,27 +145,6 @@ main {
     background: url(../../assets/images/bg-featured-participants-sections.png) no-repeat left top;
     background-size: 4em;
     height: 6em; }
-
-.sponsor-sec {
-  background-color: #545454; }
-  .sponsor-sec > div span {
-    height: 4em;
-    display: inline-block; }
-  .sponsor-sec > div span:first-child {
-    background: url(../../assets/images/partners/addidas-logo.png) no-repeat center;
-    background-size: contain; }
-  .sponsor-sec > div span:nth-child(2) {
-    background: url(../../assets/images/partners/olympics-logo.png) no-repeat center;
-    background-size: contain; }
-  .sponsor-sec > div span:nth-child(3) {
-    background: url(../../assets/images/partners/puma-logo.png) no-repeat center;
-    background-size: contain; }
-  .sponsor-sec > div span:nth-child(4) {
-    background: url(../../assets/images/partners/engrgizer-logo.png) no-repeat center;
-    background-size: contain; }
-  .sponsor-sec > div span:last-child {
-    background: url(../../assets/images/partners/reebok-logo.png) no-repeat center;
-    background-size: contain; }
 
 @media screen and (min-width: 768px) {
   main {
@@ -190,19 +190,12 @@ main {
   top: 0;
   left: 0; }
 
-.see-further-marathons > div > div:first-child:hover::before,
-.see-further-marathons > div > div:last-child:hover::before {
-  content: unset; }
-
 .see-further-marathons > div > div:first-child {
   background: url(../../assets/images/comrades-marthon.jpg) no-repeat center;
   background-size: cover;
   min-height: 15em; }
-
-.see-further-marathons > div > div:last-child {
-  background: url(../../assets/images/great-north-run.jpg) no-repeat center;
-  background-size: cover;
-  min-height: 15em; }
+  .see-further-marathons > div > div:first-child:hover::before {
+    content: unset; }
 
 .z-index-1 {
   z-index: 1; }
@@ -226,14 +219,12 @@ h2,
 h4 {
   font-family: cocogoose-regular, sans-serif; }
 
-header {
-  height: -webkit-fill-available; }
-  header a.join-btn {
-    border: 1px solid #fe4809; }
-  header nav a:hover {
-    color: #fe4809; }
-  header > div:last-child {
-    z-index: 1; }
+header a.join-btn {
+  border: 1px solid #fe4809; }
+header nav a:hover {
+  color: #fe4809; }
+header > div:last-child {
+  z-index: 1; }
 
 footer h2 {
   font-size: 1em; }

@@ -1,9 +1,11 @@
 main {
   min-height: 550px;
-  background: url(../../assets/images/main-section-background.jpg) no-repeat
+  background:
+    url(../../assets/images/main-section-background.jpg) no-repeat
     center;
   background-size: cover;
   position: relative;
+
   > span {
     position: absolute;
 
@@ -12,6 +14,7 @@ main {
       height: 2.5em;
       transition: width 1s, height 1s;
     }
+
     &:hover {
       > svg {
         width: 2.8em;
@@ -51,14 +54,62 @@ main {
   }
 }
 
+.sponsor-sec {
+  background-color: $dark-grey;
+
+  > div {
+    span {
+      height: 4em;
+      display: inline-block;
+    }
+
+    span:first-child {
+      background:
+        url(../../assets/images/partners/addidas-logo.png) no-repeat
+        center;
+      background-size: contain;
+    }
+
+    span:nth-child(2) {
+      background:
+        url(../../assets/images/partners/olympics-logo.png) no-repeat
+        center;
+      background-size: contain;
+    }
+
+    span:nth-child(3) {
+      background:
+        url(../../assets/images/partners/puma-logo.png) no-repeat
+        center;
+      background-size: contain;
+    }
+
+    span:nth-child(4) {
+      background:
+        url(../../assets/images/partners/engrgizer-logo.png) no-repeat
+        center;
+      background-size: contain;
+    }
+
+    span:last-child {
+      background:
+        url(../../assets/images/partners/reebok-logo.png) no-repeat
+        center;
+      background-size: contain;
+    }
+  }
+}
+
 .main-information {
-  background: url(../../assets/images/main-information-background.jpg) no-repeat
+  background:
+    url(../../assets/images/main-information-background.jpg) no-repeat
     center;
   background-size: cover;
 
   section > div {
     display: grid;
     grid-template-columns: 1fr 5fr;
+
     p {
       text-align: left;
     }
@@ -73,7 +124,8 @@ main {
 }
 
 .where-icon {
-  background: url(../../assets/images/main-info-icons/where.svg) no-repeat
+  background:
+    url(../../assets/images/main-info-icons/where.svg) no-repeat
     center;
   background-size: contain;
 }
@@ -84,7 +136,8 @@ main {
 }
 
 .how-long-icon {
-  background: url(../../assets/images/main-info-icons/how-long.svg) no-repeat
+  background:
+    url(../../assets/images/main-info-icons/how-long.svg) no-repeat
     center;
   background-size: contain;
 }
@@ -92,46 +145,13 @@ main {
 .featured-participants section {
   grid-template-columns: 1fr 2fr;
   min-height: 10em;
+
   > div:first-child {
-    background: url(../../assets/images/bg-featured-participants-sections.png)
+    background:
+      url(../../assets/images/bg-featured-participants-sections.png)
       no-repeat left top;
     background-size: 4em;
     height: 6em;
-  }
-}
-
-.sponsor-sec {
-  background-color: $dark-grey;
-  > div {
-    span {
-      height: 4em;
-      display: inline-block;
-    }
-    span:first-child {
-      background: url(../../assets/images/partners/addidas-logo.png) no-repeat
-        center;
-      background-size: contain;
-    }
-    span:nth-child(2) {
-      background: url(../../assets/images/partners/olympics-logo.png) no-repeat
-        center;
-      background-size: contain;
-    }
-    span:nth-child(3) {
-      background: url(../../assets/images/partners/puma-logo.png) no-repeat
-        center;
-      background-size: contain;
-    }
-    span:nth-child(4) {
-      background: url(../../assets/images/partners/engrgizer-logo.png) no-repeat
-        center;
-      background-size: contain;
-    }
-    span:last-child {
-      background: url(../../assets/images/partners/reebok-logo.png) no-repeat
-        center;
-      background-size: contain;
-    }
   }
 }
 
@@ -143,6 +163,7 @@ main {
   .main-information {
     section > div {
       display: block;
+
       p {
         text-align: center;
       }
@@ -156,6 +177,7 @@ main {
   .see-more-info {
     background-color: unset !important;
     text-decoration: underline !important;
+
     &:hover {
       color: $orange;
     }

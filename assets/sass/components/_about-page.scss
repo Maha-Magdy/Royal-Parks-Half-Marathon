@@ -23,23 +23,16 @@
   left: 0;
 }
 
-.see-further-marathons > div > div:first-child:hover,
-.see-further-marathons > div > div:last-child:hover {
-  &::before {
-    content: unset;
-  }
-}
-
 .see-further-marathons > div > div:first-child {
   background: url(../../assets/images/comrades-marthon.jpg) no-repeat center;
   background-size: cover;
   min-height: 15em;
-}
 
-.see-further-marathons > div > div:last-child {
-  background: url(../../assets/images/great-north-run.jpg) no-repeat center;
-  background-size: cover;
-  min-height: 15em;
+  &:hover {
+    &::before {
+      content: unset;
+    }
+  }
 }
 
 .z-index-1 {
