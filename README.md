@@ -3,7 +3,7 @@
 This website is to announce the coming Royal Parks Half Marathon and contains four main pages home, about, route, and tickets pages.
 The project makes use of HTML5, Bootstrap, and Sass.
 
-![screenshot](./royal-parks-website.png)
+![screenshot](app_screenshot.png)
 
 ## Built With
 
